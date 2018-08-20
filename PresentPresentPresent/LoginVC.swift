@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  LoginVC.swift
 //  PresentPresentPresent
 //
 //  Created by Lurf on 2018/08/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LoginVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,12 +17,12 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-
-    @IBAction func login(_ sender: Any) {
+    
+    @IBAction func signUp(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let loginVC = storyboard.instantiateViewController(withIdentifier: "login") as! LoginVC
-        
-        self.present(loginVC, animated: true, completion: nil)
-    }
-}
+        let signUpVC = storyboard.instantiateViewController(withIdentifier: "signup") as! SignUpVC
 
+        present(signUpVC, animated: true, completion: nil)
+    }
+    
+}

@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,94 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PresentPresentPresent" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cRr-vn-Dp6">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z4f-cl-UzU"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cRr-vn-Dp6" secondAttribute="trailing" id="6jX-pK-2rv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cRr-vn-Dp6" secondAttribute="bottom" id="JWQ-sO-zqW"/>
+                            <constraint firstItem="cRr-vn-Dp6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ZoE-oE-YcL"/>
+                            <constraint firstItem="cRr-vn-Dp6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="t6c-7U-Ida"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="393" y="43"/>
+        </scene>
+        <!--LoginVC-->
+        <scene sceneID="Wu3-V3-ug4">
+            <objects>
+                <viewController storyboardIdentifier="login" useStoryboardIdentifierAsRestorationIdentifier="YES" id="k3O-N9-oYu" customClass="LoginVC" customModule="PresentPresentPresent" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gNj-Lr-nB2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bio-3q-2G3">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <state key="normal" title="SignUp">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="signUp:" destination="k3O-N9-oYu" eventType="touchUpInside" id="txD-I1-yN1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Bio-3q-2G3" firstAttribute="leading" secondItem="qbr-Eg-fD8" secondAttribute="leading" id="69K-q3-V8A"/>
+                            <constraint firstItem="qbr-Eg-fD8" firstAttribute="trailing" secondItem="Bio-3q-2G3" secondAttribute="trailing" id="FHW-3Z-r2x"/>
+                            <constraint firstItem="Bio-3q-2G3" firstAttribute="top" secondItem="qbr-Eg-fD8" secondAttribute="top" id="iHY-eA-KLb"/>
+                            <constraint firstItem="qbr-Eg-fD8" firstAttribute="bottom" secondItem="Bio-3q-2G3" secondAttribute="bottom" id="uh9-Vy-uHG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qbr-Eg-fD8"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qoP-U2-6he" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1065" y="-269"/>
+        </scene>
+        <!--Sign UpVC-->
+        <scene sceneID="KdD-XT-y3A">
+            <objects>
+                <viewController storyboardIdentifier="signup" useStoryboardIdentifierAsRestorationIdentifier="YES" id="u0x-Um-veM" customClass="SignUpVC" customModule="PresentPresentPresent" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CDu-EV-fyO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ii4-s0-YzI">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <state key="normal" title="Dismiss"/>
+                                <connections>
+                                    <action selector="dismiss:" destination="u0x-Um-veM" eventType="touchUpInside" id="Sj1-uj-hT9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="QaR-9X-eiX" firstAttribute="trailing" secondItem="ii4-s0-YzI" secondAttribute="trailing" id="PQ6-J3-mLX"/>
+                            <constraint firstItem="ii4-s0-YzI" firstAttribute="top" secondItem="QaR-9X-eiX" secondAttribute="top" id="Usv-79-J4f"/>
+                            <constraint firstItem="ii4-s0-YzI" firstAttribute="leading" secondItem="QaR-9X-eiX" secondAttribute="leading" id="nHD-Yd-YWH"/>
+                            <constraint firstItem="QaR-9X-eiX" firstAttribute="bottom" secondItem="ii4-s0-YzI" secondAttribute="bottom" id="vPy-5x-IAI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QaR-9X-eiX"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xbr-2c-Nlc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1065" y="429"/>
         </scene>
     </scenes>
 </document>
