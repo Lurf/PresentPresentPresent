@@ -19,10 +19,10 @@ class LoginVC: UIViewController {
     }
     
     @IBAction func signUp(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let signUpVC = storyboard.instantiateViewController(withIdentifier: "signup") as! SignUpVC
-
-        present(signUpVC, animated: true, completion: nil)
+        dismiss(animated: true, completion: nil)
+        if let homeVC = presentingViewController as? ViewController {
+            homeVC.presentSignUp()
+        }
     }
     
 }

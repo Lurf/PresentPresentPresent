@@ -25,12 +25,24 @@
                                     <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z4f-cl-UzU"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qXy-4R-5zj">
+                                <rect key="frame" x="8" y="20" width="367" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="JLf-mc-o0I"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qXy-4R-5zj" secondAttribute="trailing" id="4tz-8U-Sc4"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cRr-vn-Dp6" secondAttribute="trailing" id="6jX-pK-2rv"/>
+                            <constraint firstItem="qXy-4R-5zj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="Gpj-KR-UMT"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cRr-vn-Dp6" secondAttribute="bottom" id="JWQ-sO-zqW"/>
                             <constraint firstItem="cRr-vn-Dp6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ZoE-oE-YcL"/>
+                            <constraint firstItem="qXy-4R-5zj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="bE5-st-8TQ"/>
                             <constraint firstItem="cRr-vn-Dp6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="t6c-7U-Ida"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -57,12 +69,24 @@
                                     <action selector="signUp:" destination="k3O-N9-oYu" eventType="touchUpInside" id="txD-I1-yN1"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ksG-Vh-2a6">
+                                <rect key="frame" x="8" y="20" width="367" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="jaC-0K-gxl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Bio-3q-2G3" firstAttribute="leading" secondItem="qbr-Eg-fD8" secondAttribute="leading" id="69K-q3-V8A"/>
+                            <constraint firstItem="qbr-Eg-fD8" firstAttribute="trailing" secondItem="ksG-Vh-2a6" secondAttribute="trailing" id="AwI-5Q-lYD"/>
                             <constraint firstItem="qbr-Eg-fD8" firstAttribute="trailing" secondItem="Bio-3q-2G3" secondAttribute="trailing" id="FHW-3Z-r2x"/>
+                            <constraint firstItem="ksG-Vh-2a6" firstAttribute="leading" secondItem="qbr-Eg-fD8" secondAttribute="leading" constant="8" id="YbZ-AF-G7w"/>
                             <constraint firstItem="Bio-3q-2G3" firstAttribute="top" secondItem="qbr-Eg-fD8" secondAttribute="top" id="iHY-eA-KLb"/>
+                            <constraint firstItem="ksG-Vh-2a6" firstAttribute="top" secondItem="qbr-Eg-fD8" secondAttribute="top" id="oGR-bB-Pnu"/>
                             <constraint firstItem="qbr-Eg-fD8" firstAttribute="bottom" secondItem="Bio-3q-2G3" secondAttribute="bottom" id="uh9-Vy-uHG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qbr-Eg-fD8"/>
@@ -87,9 +111,21 @@
                                     <action selector="dismiss:" destination="u0x-Um-veM" eventType="touchUpInside" id="Sj1-uj-hT9"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SignUp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1eZ-YL-hI2">
+                                <rect key="frame" x="8" y="20" width="367" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="DPL-AS-sEN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="QaR-9X-eiX" firstAttribute="trailing" secondItem="1eZ-YL-hI2" secondAttribute="trailing" id="9UM-KE-Unc"/>
+                            <constraint firstItem="1eZ-YL-hI2" firstAttribute="leading" secondItem="QaR-9X-eiX" secondAttribute="leading" constant="8" id="Cc0-sG-Vql"/>
+                            <constraint firstItem="1eZ-YL-hI2" firstAttribute="top" secondItem="QaR-9X-eiX" secondAttribute="top" id="ETP-ZO-Xdg"/>
                             <constraint firstItem="QaR-9X-eiX" firstAttribute="trailing" secondItem="ii4-s0-YzI" secondAttribute="trailing" id="PQ6-J3-mLX"/>
                             <constraint firstItem="ii4-s0-YzI" firstAttribute="top" secondItem="QaR-9X-eiX" secondAttribute="top" id="Usv-79-J4f"/>
                             <constraint firstItem="ii4-s0-YzI" firstAttribute="leading" secondItem="QaR-9X-eiX" secondAttribute="leading" id="nHD-Yd-YWH"/>

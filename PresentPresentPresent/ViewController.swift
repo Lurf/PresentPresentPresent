@@ -24,5 +24,13 @@ class ViewController: UIViewController {
         
         self.present(loginVC, animated: true, completion: nil)
     }
+    
+    
+    func presentSignUp() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let signUpVC = storyboard.instantiateViewController(withIdentifier: "signup") as! SignUpVC
+        
+        self.present(signUpVC, animated: true, completion: nil)
+    }
 }
 

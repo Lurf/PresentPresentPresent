@@ -19,7 +19,7 @@ class SignUpVC: UIViewController {
     }
     
     @IBAction func dismiss(_ sender: Any) {
-        presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
+        dismiss(animated: true, completion: nil)
     }
     
 }
